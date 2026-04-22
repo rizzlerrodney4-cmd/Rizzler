@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Contact Owner</title>
+
+<style>
+body {
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial;
+}
+
+button {
+  padding: 20px 40px;
+  font-size: 18px;
+  color: white;
+  background: #00ffcc;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+  animation: glow 1s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 10px #00ffcc;
+  }
+  to {
+    box-shadow: 0 0 30px #00ffcc;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<button onclick="showMessage()">Tap Here</button>
+
+<script>
+function showMessage() {
+  alert("Great! Contact the owner of this page by texting him.");
+  
+  // Redirect to your Facebook profile (Messenger)
+  window.location.href = "https://www.facebook.com/messages/t/61576524388459";
+}
+</script>
+
+</body>
+</html>
